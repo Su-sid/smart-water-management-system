@@ -1,10 +1,9 @@
 <!doctype html>
+<meta name="viewport" content="width=device-width">
 <html lang="en">
 
 <head>
-
 <script type="text/javascript" src='jquery.min.js'></script>
-
 <script>
 	function data_request_timer(){
 		window.setInterval(get_data, 2000); //timer for running get_data() function every 2 seconds 
@@ -12,7 +11,7 @@
 
 	function get_data(){
 		console.log("fetching data from server");
-
+//ajax calls to fetch data
 		$.get("read_data1.php", 
 		function(data, status){
 	    	document.getElementById("info").innerHTML = data;
@@ -33,8 +32,8 @@
 
 
 <!--  Dummy value insertion link -->
-<button>
-	<a style='text-decoration:none;font-size:12px' href='../insert_data.php?dist=65' target='_blank'>Insert dummy value</a>
+<button class="btn">
+	<a  href='../insert_data.php?dist=65' target='_blank'>Insert dummy value</a>
 </button>
 
 </body>

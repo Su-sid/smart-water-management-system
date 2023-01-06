@@ -2,7 +2,7 @@
 ini_set('display_errors', '1');
 
 //----------database access----------------------------
-include_once '../util.php';
+include_once 'util.php';
 //-----------------------------------------------------
 
 $con=create_db_connection();
@@ -63,5 +63,5 @@ $html="<div style='$style'>
 ";
 
 echo $html;
-	
+	// select how to return data back to an id or class.
 ?>

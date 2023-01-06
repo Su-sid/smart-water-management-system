@@ -1,11 +1,19 @@
-<html>
-<head>
+<!doctype html>
+<meta name="viewport" content="width=device-width">
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+	</head>
+	<head>
+		<meta name="viewport" content="width=device-width">
+
 	<title>Simulation</title>
 	<script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
     <script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>
   
 	<script type="text/javascript" src="tank_animation_simulation.js"></script>
-	<script type="text/javascript" src='../basic_page/jquery.min.js'></script>
+	<script type="text/javascript" src="../basic_page/jquery.min.js"></script>
   
     
     <script>
@@ -30,20 +38,21 @@
 </head>
 <body onload="data_request_timer(1000)">
 
-<div align='center'>
-    <div style='margin-top:30px'>
-         <p id='info'></p>
+<div align="center">
+    <div style="margin-top:30px">
+         <p id="info"></p>
     </div>
     
-    <div style='margin-top:30px'>
-	    <div id='chart-container'>Reload Page if you don't see animation</div>
+    <div style="margin-top:30px">
+	    <div id="chart-container">Reload Page if you don't see animation</div>
     </div>
 
-    <div style='margin-top:30px; width:50%;'>
-	    <p>In this simulation, the server time seconds info is fed to the tank animation. See how the parameters are tweaked in the tank_animation_simulation.js file to change the appearance and behaviour of the tank</p>
+    <div style="margin-top:30px; width:50%;">
+	    <p>In this simulation, the server time seconds info is fed to the tank animation.</p>
+		<p>See how the parameters in the tank_animation_simulation.js file to change the appearance and behaviour of the tank</p>
     </div>
 </div>
 
 
-</body>
-</html>
+
+</body></html>
